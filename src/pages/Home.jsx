@@ -4,8 +4,8 @@ import Social from '../components/Social';
 
 function Home() {
   return (
-    <div className='w-full flex items-center justify-evenly '>
-      <div className=' flex flex-col gap-4'>
+    <div className='w-5/6  mx-auto flex items-center justify-evenly mt-4'>
+      <div className=' flex flex-col gap-4 pl-4'>
         <div className='font-bold text-5xl leading-normal'>
           <h1>Hi There,</h1>
           <h1>I'm Sagnik <span className='text-[#ff7b00]'>Majumder</span></h1>
@@ -38,7 +38,7 @@ function Home() {
         
       </div>
       <div className='rounded-full'>
-          <img className='' src='./myAvatar.webp'/>
+          <img src='./myAvatar.webp'/>
       </div>
       
     </div>

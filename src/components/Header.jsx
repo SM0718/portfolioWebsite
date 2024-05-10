@@ -41,7 +41,7 @@ function Header() {
   return (
     <>
     <div className='w-full flex justify-center shadow-lg'>
-    <div className='w-3/4 flex justify-between z-20'>
+    <div className='w-3/4  flex justify-between z-20'>
         <div className=''>
             <Logo className={"h-24"}/>
         </div>
