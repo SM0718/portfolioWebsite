@@ -3,9 +3,30 @@ import { TypeAnimation } from 'react-type-animation';
 import Social from '../components/Social';
 
 function Home() {
+
   return (
-    <div className='w-5/6  mx-auto flex items-center justify-evenly mt-4'>
-      <div className=' flex flex-col gap-4 pl-4'>
+    <div className='w-5/6 h-fullmx-auto flex justify-center background'>
+      {/* <div className=''> */}
+          <section className='z-10'></section>
+          <section className='z-10'></section>
+          <section className='z-10'></section>
+          <section className='z-10'></section>
+          <section className='z-10'></section>
+          <section className='z-10'></section>
+          <section className='z-10'></section>
+          <section className='z-10'></section>
+          <section className='z-10'></section>
+          <section className='z-10'></section>
+          <section className='z-10'></section>
+          <section className='z-10'></section>
+          <section className='z-10'></section>
+          <section className='z-10'></section>
+          <section className='z-10'></section>
+          <section className='z-10'></section>
+      {/* </div> */}
+
+       <div className='w-3/4 flex items-start justify-between gap-8 pt-20 z-20'>
+        <div className='flex flex-col gap-4 mt-16'>
         <div className='font-bold text-5xl leading-normal'>
           <h1>Hi There,</h1>
           <h1>I'm Sagnik <span className='text-[#ff7b00]'>Majumder</span></h1>
@@ -37,9 +58,10 @@ function Home() {
         </div>
         
       </div>
-      <div className='rounded-full'>
-          <img src='./myAvatar.webp'/>
-      </div>
+          <img className='rounded-full size-[475px]' src='./myAvatar.webp'/>
+      
+        </div>   
+      
       
     </div>
   )

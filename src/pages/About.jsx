@@ -2,7 +2,9 @@ import React from 'react'
 
 function About() {
   return (
-    <div>About</div>
+    <div>
+      <img className='height-64' src='./myAvatar2.webp'/>
+    </div>
   )
 }
 

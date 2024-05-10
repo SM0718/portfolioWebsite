@@ -43,7 +43,7 @@ function Header() {
     <div className='w-full flex justify-center shadow-lg'>
     <div className='w-3/4  flex justify-between z-20'>
         <div className=''>
-            <Logo className={"h-24"}/>
+            <Logo className={"h-20"}/>
         </div>
         <div className='lg:flex gap-10 items-center hidden'>
             {
@@ -52,7 +52,7 @@ function Header() {
                 to={item.slug}
                 className={({isActive}) => `${isActive? "before:block before:translate-y-8  text-[#021bff]" : "before:hidden"} relative cursor-pointer font-bold text-[15.7px] font-sans hover:text-[#021bff]
                 before:content-[''] before:h-[2px] before:w-full before:rounded-b-xl before:bg-[#021bff]
-                before:hover:block before:absolute before:hover:transition before:hover:translate-y-10
+                before:hover:block before:absolute before:hover:transition before:hover:translate-y-8
                 before:hover:ease-in-out before:hover:duration-400
                 `}
                 >
