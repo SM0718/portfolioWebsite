@@ -25,6 +25,20 @@ export default {
       'sans': ['Poppins', 'ui-sans-serif', 'system-ui']
     }
   },
-  plugins: [],
+  plugins: [
+    function ({addUtilities}) {
+      const newUtilities = {
+        ".no-scrollbar::-webkit-scrollbar": {
+          display: "none",
+        },
+        ".no-scrollbar": {
+          "-ms-overflow-style": "none",
+          "scrollbar-width": "none",
+        }
+      };
+
+      addUtilities(newUtilities);
+    }
+  ],
 }
 

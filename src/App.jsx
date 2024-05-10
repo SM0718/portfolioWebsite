@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { projects } from './projects/projects.js'
 import Header from './components/Header.jsx'
 import { Outlet } from 'react-router-dom'
+import Footer from './components/Footer.jsx'
 
 function App() {
   console.log(projects)
@@ -9,6 +10,7 @@ function App() {
     <>
       <Header />
       <Outlet />
+      <Footer />
     </>
   )
 }

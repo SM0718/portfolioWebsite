@@ -5,7 +5,7 @@ import Social from '../components/Social';
 function Home() {
 
   return (
-    <div className='w-5/6 h-fullmx-auto flex justify-center background'>
+    <div className='w-5/6 h-full mx-auto flex justify-center background overflow-hidden'>
       {/* <div className=''> */}
           <section className='z-10'></section>
           <section className='z-10'></section>
@@ -25,14 +25,14 @@ function Home() {
           <section className='z-10'></section>
       {/* </div> */}
 
-       <div className='w-3/4 flex items-start justify-between gap-8 pt-20 z-20'>
-        <div className='flex flex-col gap-4 mt-16'>
+       <div className='md:w-3/4 w-full px-8 flex lg:flex-row flex-col items-start justify-between gap-8 lg:pt-20 pt-1 z-20 overflow-scroll no-scrollbar'>
+        <div className='flex flex-col gap-4 md:mt-16 mt-10'>
         <div className='font-bold text-5xl leading-normal'>
           <h1>Hi There,</h1>
           <h1>I'm Sagnik <span className='text-[#ff7b00]'>Majumder</span></h1>
         </div>
         <div className='leading-normal'>
-          <h1 className='text-2xl leading-normalz'>
+          <h1 className='md:text-2xl text-lg leading-normal'>
             I am a <TypeAnimation
       sequence={[
         'Frontend Developer',
@@ -58,7 +58,7 @@ function Home() {
         </div>
         
       </div>
-          <img className='rounded-full size-[475px]' src='./myAvatar.webp'/>
+        <img className='rounded-full size-[475px]' src='./myAvatar.webp'/>
       
         </div>   
       
