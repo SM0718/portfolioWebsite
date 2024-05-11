@@ -21,10 +21,6 @@ function Header() {
             slug: "/about"
         },
         {
-            name: "Skills",
-            slug: "/skills"
-        },
-        {
             name: "Education",
             slug: "/education"
         },
