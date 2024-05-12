@@ -36,7 +36,7 @@ function Header() {
 
   return (
     <>
-    <div className='w-full flex justify-center shadow-lg'>
+    <div className='w-full flex justify-center shadow-lg z-20'>
     <div className='w-3/4  flex justify-between z-20'>
         <div className=''>
             <Logo className={"h-20"}/>
@@ -76,7 +76,7 @@ function Header() {
     
         
 </div>
-    <div className={`${show? "flex" : "hidden"} bg-[#0e0f31] justify-center items-start h-screen md:w-[600px] sm:w-[400px] w-screen lg:hidden absolute animate-[rightIn_1s] right-0 z-10`}>
+    <div className={`${show? "flex" : "hidden"} bg-[#0e0f31] justify-center items-start h-screen md:w-[600px] sm:w-[400px] w-screen lg:hidden absolute animate-[rightIn_1s] right-0 z-30`}>
     <div className='w-full h-3/4 flex flex-col justify-evenly items-center gap-1 text-white'>
             {
                 headerItems.map(item => <NavLink

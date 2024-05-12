@@ -2,29 +2,19 @@ import React from 'react'
 import { TypeAnimation } from 'react-type-animation';
 import Social from '../components/Social';
 import Skills from './Skills';
+import About from './About';
 
 function Home() {
 
-
   return (
-    <div className='w-5/6 h-screen mx-auto flex flex-col items-center justify-start pb-16 background overflow-hidden'>
-          <section className='z-10' ></section>
-          <section className='z-10'></section>
-          <section className='z-10'></section>
-          <section className='z-10'></section>
-          <section className='z-10'></section>
-          <section className='z-10'></section>
-          <section className='z-10'></section>
-          <section className='z-10'></section>
-          <section className='z-10'></section>
-          <section className='z-10'></section>
-          <section className='z-10'></section>
-          <section className='z-10'></section>
-          <section className='z-10'></section>
-          <section className='z-10'></section>
-          <section className='z-10'></section>
-          <section className='z-10'></section>
-       <div className='md:w-3/4 w-full px-8 flex lg:flex-row flex-col items-start justify-start gap-8 lg:pt-20 pt-1 z-20 md:overflow-hidden overflow-scroll no-scrollbar'>
+    <div>
+
+    <div className='w-5/6 mx-auto flex flex-col items-center justify-center background pb-8 overflow-hidden'>
+          {
+            Array(16).fill(0).map(_ => <section className='z-0'></section>)
+          }
+       <div className='md:w-3/4  w-full px-8 flex lg:flex-row flex-col items-between justify-start
+        lg:pt-20 pt-1 z-20 md:overflow-hidden overflow-scroll no-scrollbar'>
      
         <div className='my-auto flex flex-col  gap-4 '>
         <div className='font-bold text-5xl leading-normal'>
@@ -60,14 +50,15 @@ function Home() {
       </div>
 
         <img className='rounded-full size-[400px]' src='./myAvatar.webp'/>
-        
-    
-        
-        
         </div>   
-        <Skills />
         
     </div>
+
+    <Skills />
+    <About />
+
+    </div>
+    
   )
 }
 
